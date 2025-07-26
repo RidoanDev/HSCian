@@ -1,55 +1,48 @@
-import { Users, MessageSquare, BookOpen, HelpCircle, ExternalLink, Heart } from "lucide-react";
+import { Youtube, Facebook, Users, MessageSquare, BookOpen } from "lucide-react";
 
 export const Contact = () => {
   const communityGroups = [
     {
-      icon: Users,
-      title: "Science Group",
-      description: "Connect with science students",
+      icon: Youtube,
+      title: "YouTube Channel",
+      description: "Subscribe for video lessons",
+      color: "bg-red-100 text-red-600",
+      url: "https://youtube.com/@HSCian"
+    },
+    {
+      icon: Facebook,
+      title: "Facebook Page", 
+      description: "Get updates and announcements",
       color: "bg-blue-100 text-blue-600",
-      url: "https://facebook.com/groups/science-group"
+      url: "https://facebook.com/hscianX"
     },
     {
       icon: Users,
-      title: "Humanities Group", 
-      description: "Join humanities discussions",
+      title: "Facebook Group",
+      description: "Join student discussions",
       color: "bg-green-100 text-green-600",
-      url: "https://facebook.com/groups/humanities-group"
-    },
-    {
-      icon: Users,
-      title: "Commerce Group",
-      description: "Business studies support",
-      color: "bg-purple-100 text-purple-600",
-      url: "https://facebook.com/groups/commerce-group"
-    },
-    {
-      icon: MessageSquare,
-      title: "WhatsApp Help",
-      description: "Instant study help",
-      color: "bg-emerald-100 text-emerald-600",
-      url: "https://wa.me/yourgroup"
+      url: "https://facebook.com/groups/hscianX"
     },
     {
       icon: BookOpen,
-      title: "Telegram Resources",
+      title: "Telegram Group",
       description: "Share study materials",
       color: "bg-cyan-100 text-cyan-600",
-      url: "https://t.me/yourchannel"
+      url: "https://t.me/01712525910"
     },
     {
-      icon: HelpCircle,
-      title: "Discord Q&A",
-      description: "Ask questions, get answers",
-      color: "bg-indigo-100 text-indigo-600",
-      url: "https://discord.gg/yourserver"
+      icon: MessageSquare,
+      title: "WhatsApp Group",
+      description: "Instant study help",
+      color: "bg-emerald-100 text-emerald-600",
+      url: "https://wa.me/01712525910"
     }
   ];
 
   return (
     <div className="min-h-screen bg-gray-50 p-4">
       <div className="max-w-md mx-auto">
-        {/* হেডার সেকশন */}
+        {/* Header Section */}
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold text-blue-600 mb-2">HSC Community</h1>
           <p className="text-gray-600">
@@ -57,7 +50,7 @@ export const Contact = () => {
           </p>
         </div>
 
-        {/* গ্রিড সিস্টেম - প্রতিটি সারিতে ২টি আইটেম */}
+        {/* Grid System - 2 items per row */}
         <div className="grid grid-cols-2 gap-4">
           {communityGroups.map((item, index) => {
             const Icon = item.icon;

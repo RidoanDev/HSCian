@@ -1,0 +1,27 @@
+{
+  "name": "HSCian",
+  "short_name": "HSCian",
+  "description": "Complete HSC learning package",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/BQP7QDjk/HSCian-20250725-225238-0000.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://i.postimg.cc/BQP7QDjk/HSCian-20250725-225238-0000.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "bn",
+  "dir": "ltr"
+}
